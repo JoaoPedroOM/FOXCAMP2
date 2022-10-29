@@ -1,0 +1,38 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block log%}<a href="http://127.0.0.1:5000/login"><li>login</li></a>{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <form method="post">
+            <div class="mb-3">
+                <input type="checkbox" name="masculino" id="masculino" placeholder="masculino">
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" name="feminino" id="feminino">
+            </div>
+            <div class="mb-3">
+                <input type="email" placeholder="Email" name="email" id="email" autocomplete="off" class="form-control mx-auto w-auto" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Nome" name="nome" id="nome" autocomplete="off" autofocus class="form-control mx-auto w-auto" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Sobrenome" name="sobrenome" id="sobrenome" autocomplete="off" autofocus class="form-control mx-auto w-auto" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" placeholder="Senha" name="password" id="password" autocomplete="off" class="form-control mx-auto w-auto">
+            </div>
+            <div class="mb-3">
+                <input type="password" placeholder="Confirme a senha" name="confirm_password" id="confirm_password" autocomplete="off" class="form-control mx-auto w-auto" required>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login Page
+{% endblock %}
+
+
+{% block body %}
+    <div class="container login_container">
+        <div class="container login_list">
+            <ul>
+                <li>
+                    Doesn't have an account yet? <a class="register_btn" href="http://127.0.0.1:5000/register">Register</a>
+                </li>
+                <li>
+                    <a class="forgot_btn" href="http://127.0.0.1:5000/forgotpassword">Forgot your password?</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container div_login_btns">
+            <form method="post">
+                <div class="mb-3">
+                    <input type="email" placeholder="Email" name="email" id="email" autocomplete="off" autofocus class="form-control mx-auto w-auto" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" placeholder="senha" name="password" id="password" autocomplete="off" class="form-control mx-auto w-auto" required>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn_login btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

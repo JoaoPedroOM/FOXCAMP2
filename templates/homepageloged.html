@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block log %}
+    {% for row in username %}
+        <a href="http://127.0.0.1:5000/users/<usr>"><li>{{ row['nome'] }}</li></a>
+    {% endfor %}
+{% endblock %}
+
+{% block body %}
+    Hello, World!
+{% endblock %}
